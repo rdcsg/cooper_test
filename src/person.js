@@ -6,7 +6,7 @@ function Person(attr) {
 }
 
 Person.prototype.get_rating = function () {
-  //var what_is_the = new CooperCalculation();
+  //var what_is_the = new CooperRating();
   //what_is_the.rating_of(this);
   this.rating_of = "Bad";
 };
