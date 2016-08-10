@@ -1,7 +1,7 @@
 describe("Person", function() {
 
   beforeEach(function() {
-    person = new Person ({ selected_gender: "male", age: 21, distance_performed: 1980, rating_of: "Bad" });
+    person = new Person ({ selected_gender: "male", age: 21, distance_performed: 1980 });
   });
 
 
@@ -18,7 +18,7 @@ describe("Person", function() {
   });
 
   it("has a cooper test rating of \"Bad\"", function() {
-    //person.get_rating();
+    person.get_rating();
     expect(person.rating_of).toEqual("Bad");
   });
 
