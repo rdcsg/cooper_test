@@ -16,8 +16,8 @@ describe ("Person", function() {
     expect(person.distance_performed).toEqual(1980);
   });
 
-  it("has a calculated cooper test value of 32,98", function() {
+  it("has a calculated cooper test rating of \"Bad\"", function() {
     person.get_rating();
-    expect(person.find_cooper_rating).toEqual("Bad");
+    expect(person.rating).toEqual("Bad");
   });
 });
