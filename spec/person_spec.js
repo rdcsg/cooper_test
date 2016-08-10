@@ -1,6 +1,5 @@
 describe ("Person", function() {
 
-  //set gender, age and performance
   beforeEach(function() {
     person = new Person ({selected_gender: "male", age: 21, distance_performed: 1980 });
   });
@@ -18,7 +17,7 @@ describe ("Person", function() {
   });
 
   it("has a calculated cooper test value of 32,98", function() {
-    person.calculate_cooper_value();
-    expect(person.cooper_value).toEqual(32.98);
+    person.get_rating();
+    expect(person.find_cooper_rating).toEqual("Bad");
   });
 });
