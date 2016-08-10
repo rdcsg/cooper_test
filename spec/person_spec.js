@@ -18,6 +18,7 @@ describe ("Person", function() {
   });
 
   it("has a calculated cooper test value of 32,98", function() {
-    expect(person.coop_value).toEqual(32.98);
+    person.calculate_cooper_value();
+    expect(person.cooper_value).toEqual(32.98);
   });
 });
