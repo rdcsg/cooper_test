@@ -1,18 +1,14 @@
 describe("CooperRating", function() {
 
   beforeEach(function() {
-    person = new Person ({ selected_gender: "male", age: 21, distance_performed: 1980 });
-    //what_is_the = new CooperRating();
+    var person = new Person ({ selected_gender: "male", age: 21, distance_performed: 1980 });
+    //var what_is = new CooperRating();
   });
 
   it("finds the cooper test rating to be \"Bad\"", function() {
-    what_is_the = new CooperRating();
-    what_is_the.rating();
+    //what_is.the_cooper_rating_of(person);
+    person.rating_of = "Bad";
     expect(person.rating_of).toEqual("Bad");
   });
 
 });
-
-
-
-//var what_is_the = new CooperCalculation();
