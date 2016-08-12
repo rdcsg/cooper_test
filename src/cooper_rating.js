@@ -3,36 +3,19 @@ function CooperRating() {
 }
 
 CooperRating.prototype.rating_of = function(obj) {
-  var gender = obj.selected_gender;
-  var age = obj.age;
-  var achievement = obj.distance_performed;
-  var rating = obj.rating;
-  //obj.rating = "Bad";
-  findRating(obj);
-};
-
-// choose database depending on gender
-function findRating(obj) {
-  //obj.rating = "Bad";
-  /*switch (obj.gender) {
+  switch (obj.gender) {
     case "male":
-        obj.rating = "Bad";
-        //MaleRating(obj);
+        RateMale(obj);
       break;
     case "female":
         obj.rating = "Good";
-        //FemaleRating(obj);
+        //RateFemale(obj);
       break;
-  }*/
-  if (obj.gender == "male") {
-    RateMale(obj);
   }
-
-}
+};
 
 function RateMale(obj) {
   obj.rating = "Bad";
-  console.log("inside RateMale");
 }
 
 /*function RateFemale(obj) {
