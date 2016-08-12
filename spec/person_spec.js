@@ -1,12 +1,12 @@
 describe("Person", function() {
 
   beforeEach(function() {
-    person = new Person ({ selected_gender: "male", age: 21, distance_performed: 1980 });
+    person = new Person ({ gender: "male", age: 21, distance_performed: 1980 });
   });
 
 
   it("has the selected gender to \'male\' ", function() {
-    expect(person.selected_gender).toEqual("male");
+    expect(person.gender).toEqual("male");
   });
 
   it("has the age of 21", function() {

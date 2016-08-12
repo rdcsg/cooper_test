@@ -1,5 +1,5 @@
 function Person(attr) {
-  this.selected_gender = attr.selected_gender;
+  this.gender = attr.gender;
   this.age = attr.age;
   this.distance_performed = attr.distance_performed;
   this.rating = attr.rating;
@@ -8,5 +8,4 @@ function Person(attr) {
 Person.prototype.get_rating = function () {
   var what_is_the = new CooperRating();
   what_is_the.rating_of(this);
-  //this.rating = "Bad";
 };
