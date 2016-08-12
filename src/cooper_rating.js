@@ -7,45 +7,23 @@ CooperRating.prototype.rating_of = function(obj) {
   var age = obj.age;
   var achievement = obj.distance_performed;
   var rating = obj.rating;
-  //obj.rating = "Bad";
-  findRating(obj);
-};
 
 // choose database depending on gender
-function findRating(obj) {
-    var gender = obj.selected_gender;
-  //obj.rating = "Bad";
-  /*switch (ogender) {
-    case "male":
-        obj.rating = "Bad";
-        //RateMale(obj);
-      break;
-    case "female":
-        obj.rating = "Good";
-        //RateFemale(obj);
-      break;
-  }*/
-  if (gender == "male") {
-    RateMale(obj);
-    //obj.rating = "Bad";
-  }
+  if (gender == "female")
+    obj.rating = RateFemale(age, achievement);
+  else
+    obj.rating = RateMale(age, achievement);
+};
 
+function RateMale(age, achievement) {
+  var rating = "Bad";
+  return rating;
 }
 
-function RateMale(obj) {
-  obj.rating = "Bad";
-  console.log("inside RateMale");
+function RateFemale(age, achievement) {
+  var rating = "Bad";
+  return rating;
 }
-
-/*function RateFemale(obj) {
-  obj.rating = "Good";
-}*/
-
-// database function for males
-
-
-
-// database function for females
 
 
 // Which solution is the best?
