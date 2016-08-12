@@ -1,19 +1,15 @@
-function CooperRating() {
-
-}
-
-CooperRating.prototype.rating_of = function(obj) {
+function rating_of(obj) {
   var gender = obj.selected_gender;
   var age = obj.age;
   var achievement = obj.distance_performed;
   var rating = obj.rating;
 
-// choose database depending on gender
+  // choose database depending on gender
   if (gender == "female")
     obj.rating = RateFemale(age, achievement);
   else
     obj.rating = RateMale(age, achievement);
-};
+}
 
 function RateMale(age, achievement) {
   var rating = "Bad";
@@ -21,7 +17,7 @@ function RateMale(age, achievement) {
 }
 
 function RateFemale(age, achievement) {
-  var rating = "Bad";
+  var rating = "Good";
   return rating;
 }
 
