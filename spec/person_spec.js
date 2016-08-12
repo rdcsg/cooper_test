@@ -17,9 +17,9 @@ describe("Person", function() {
     expect(person.distance_performed).toEqual(1980);
   });
 
-  it("has a cooper test rating of \"Bad\"", function() {
+  it("has a cooper test rating of \"Poor\"", function() {
     person.get_rating();
-    expect(person.rating).toEqual("Bad");
+    expect(person.rating).toEqual("Poor");
   });
 
 });
