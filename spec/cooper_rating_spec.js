@@ -8,7 +8,7 @@ describe("CooperRating", function() {
   it("finds the cooper test rating to be \"Bad\"", function() {
     //what_is_the.cooper_rating_of(person);
     person.get_rating();
-    expect(person.rating_of).toEqual("Bad");
+    expect(person.rating).toEqual("Bad");
   });
 
 });

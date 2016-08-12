@@ -19,7 +19,7 @@ describe("Person", function() {
 
   it("has a cooper test rating of \"Bad\"", function() {
     person.get_rating();
-    expect(person.rating_of).toEqual("Bad");
+    expect(person.rating).toEqual("Bad");
   });
 
 });
