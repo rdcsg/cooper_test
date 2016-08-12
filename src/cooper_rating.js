@@ -13,19 +13,21 @@ CooperRating.prototype.rating_of = function(obj) {
 
 // choose database depending on gender
 function findRating(obj) {
+    var gender = obj.selected_gender;
   //obj.rating = "Bad";
-  /*switch (obj.gender) {
+  /*switch (ogender) {
     case "male":
         obj.rating = "Bad";
-        //MaleRating(obj);
+        //RateMale(obj);
       break;
     case "female":
         obj.rating = "Good";
-        //FemaleRating(obj);
+        //RateFemale(obj);
       break;
   }*/
-  if (obj.gender == "male") {
+  if (gender == "male") {
     RateMale(obj);
+    //obj.rating = "Bad";
   }
 
 }
